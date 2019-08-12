@@ -11,5 +11,8 @@
   "bugs": {
     "url": "https://github.com/SoluzioniFutura/elasticsearch-demo/issues"
   },
-  "homepage": "https://github.com/SoluzioniFutura/elasticsearch-demo#readme"
+  "homepage": "https://github.com/SoluzioniFutura/elasticsearch-demo#readme",
+  "dependencies": {
+    "elasticsearch": "^16.3.0"
+  }
 }
