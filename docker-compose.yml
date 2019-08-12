@@ -4,9 +4,8 @@ services:
     image: docker.elastic.co/elasticsearch/elasticsearch:7.3.0
     container_name: es0
     environment:
-      - node.name=es01
-      - discovery.seed_hosts=es02
-      - cluster.initial_master_nodes=es01,es02
+      - node.name=es0
+      - cluster.initial_master_nodes=es0
       - cluster.name=docker-cluster
       - bootstrap.memory_lock=true
       - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
@@ -20,6 +19,12 @@ services:
       - 9200:9200
     networks:
       - esnet
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:6.3.2
+    container_name: kibana
+    ports:
+      - 5601:5601
 
 volumes:
   esdata0:
