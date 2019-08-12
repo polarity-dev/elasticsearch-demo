@@ -15,23 +15,25 @@ services:
         hard: -1
     volumes:
       - esdata0:/usr/share/elasticsearch/data
-      - ./elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
+#      - ./elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
     ports:
       - 9200:9200
     networks:
-      - esnet
+      - common
 
-  kibana:
-    image: docker.elastic.co/kibana/kibana:6.3.2
-    container_name: kibana
-    ports:
-      - 5601:5601
-    volumes: 
-      - ./kibana.yml:/usr/share/kibana/config/kibana.yml
+#  kibana:
+#    image: docker.elastic.co/kibana/kibana:6.3.2
+#    container_name: kibana
+#    ports:
+#      - 5601:5601
+#    volumes: 
+#      - ./kibana.yml:/usr/share/kibana/config/kibana.yml
+#    networks:
+#      - common
 
 volumes:
   esdata0:
     driver: local
 
 networks:
-  esnet:
+  common:
