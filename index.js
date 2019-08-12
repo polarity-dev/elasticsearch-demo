@@ -6,8 +6,8 @@ const client = new Client({ node: 'http://localhost:9200' })
 async function run () {
   await client.index({
     index: 'products',
+    id: 20,
     body: {
-      id: 0,
       name: 'rosario',
       price: 10,
       sale: 10
@@ -16,8 +16,8 @@ async function run () {
 
   await client.index({
     index: 'products',
+    id: 30,
     body: {
-      id: 1,
       name: 'crocifisso',
       price: 15,
       sale: 0
@@ -26,8 +26,8 @@ async function run () {
 
   await client.index({
     index: 'products',
+    id: 40,
     body: {
-      id: 2,
       name: 'candela',
       price: 5,
       sale: 50
@@ -36,8 +36,8 @@ async function run () {
  
   await client.index({
     index: 'products',
+    id: 50,
     body: {
-      id: 3,
       name: 'ostia',
       price: 2,
       sale: 33
