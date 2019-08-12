@@ -45,7 +45,7 @@ async function run () {
   })
     
 
-  await client.indices.refresh({ index: 'game-of-thrones' })
+  await client.indices.refresh({ index: 'products' })
 }
 
-run()
+run().catch(console.error)
