@@ -1,0 +1,18 @@
+{
+  "name": "seeder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SoluzioniFutura/elasticsearch-demo/issues"
+  },
+  "homepage": "https://github.com/SoluzioniFutura/elasticsearch-demo#readme",
+  "dependencies": {
+    "elasticsearch": "^16.3.0"
+  }
+}
