@@ -1,0 +1,41 @@
+{
+ "mappings": {
+   "properties": {
+     "productId": { "type": "integer", "index": true },
+     "domainCode": { "type": "text", "fielddata": true, "index": true },
+     "languageId": { "type": "integer", "index": true },
+     "productAwsImages": { "type": "text", "index": false },
+     "productImage": { "type": "text", "index": false },
+     "productModel": { "type": "text", "fielddata": true, "index": true },
+     "productTitle": { "type": "text", "fielddata": true, "index": true },
+     "productName": { "type": "text", "fielddata": true, "index": true },
+     "productDescription": { "type": "text", "fielddata": true, "index": true },
+     "productPricedByAttributes": { "type": "boolean", "index": false },
+     "productIsNew": { "type": "boolean", "index": true },
+     "productDateAvailable": { "type": "date", "index": true },
+     "productSoldOut": { "type": "boolean", "index": true },
+     "productQtyBoxStatus": { "type": "integer", "index": false },
+     "productIsCall": { "type": "integer", "index": false },
+     "productQuantity": { "type": "integer", "index": true },
+     "productAvailabilityType": { "type": "integer", "index": false },
+     "productRestockDays": { "type": "integer", "index": false },
+     "productRating": { "type": "integer", "index": false },
+     "productTaxClassId": { "type": "integer", "index": false },
+     "productMasterCategoriesId": { "type": "integer", "index": true },
+     "productType": { "type": "text", "index": false },
+     "countryId": { "type": "integer", "index": false },
+     "zoneId": { "type": "integer", "index": false },
+     "productPath": { "type": "text", "index": false },
+     "productBasePrice": { "type": "integer", "index": true },
+     "productSpecialPrice": { "type": "integer", "index": true },
+     "productSalePrice": { "type": "integer", "index": true },
+     "productTaxRate": { "type": "integer", "index": false },
+     "productQuantityDiscount": { "type": "integer", "index": true },
+     "productPromo": { "type": "integer", "index": true },
+     "productCounterReviews": { "type": "integer", "index": false },
+     "productUrl": { "type": "text", "index": false },
+     "generationDate": { "type": "date", "index": false },
+     "cached": { "type": "boolean", "index": false }
+    }
+  }
+}

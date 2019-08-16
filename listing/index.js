@@ -24,29 +24,16 @@ const body = {
       "productBasePrice": "asc",
       "productSalePrice": {
         "order": "asc",
-        "missing": "_last",
-        
-          "filter": {
-            "range": {
-              "productSalePrice": {
-                "gte": 0
-              }
+        "missing": "_last"
             }
           }
         
       },
       "productSpecialPrice": {
         "order": "asc",
-        "missing": "_last",
-          "filter": {
-            "range": {
-              "productSpecialPrice": {
-                "gte": 0
-              }
-            }
-          }
-        
-      }
+        "missing": "_last"
+        }
+    
     }  
   ]
 }
